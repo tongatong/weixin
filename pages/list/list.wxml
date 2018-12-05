@@ -1,0 +1,24 @@
+<!--pages/list/list.wxml-->
+<view class="list">
+    <view class="header">
+      <text class="iconfont icon-page-pre" bindtap="LieBiao"></text>
+      <text class="title">列表页</text>
+    </view>
+    
+    <ul class="list-ul">
+      <view class="list-view" catchtap="catchTapCategory" wx:for="{{ News }}" wx:key="id" data-goodsid="{{item.id}}">
+        <span class="iconfont icon-xinwen"></span>
+        <li class="list-li">
+          <text class="list-info">"{{ item.bt}}"</text>
+        </li>
+        <span class="iconfont icon-xiayiye2"></span>
+      </view> 
+  
+    </ul>  
+
+    <!-- <loading hidden="{{loadingHidden}}">
+        加载中...
+    </loading> -->
+
+
+</view>

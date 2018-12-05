@@ -1,0 +1,62 @@
+/* pages/home/home.wxss */
+@import "../../static/iconfont/iconfont.wxss";
+
+
+.home-info{
+  display:flex;
+  height:50px;
+  line-height:50px;
+} 
+.info-ban{
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  margin-left:50%;
+}
+.info-text{
+  line-height: 50px;
+  padding-left:20px;
+}
+/* 轮播 */
+.swiper {
+  height: 400rpx;
+  width: 100%;
+}
+.swiper-image {
+  height: 100%;
+  width: 100%;
+}
+.slide-image{
+   height: 100%;
+  width: 100%;
+}
+/* 分类 */
+.fenlei-ul{
+  width:100%;
+  display:flex;
+  flex-wrap: wrap;
+  
+}
+.fenlei-li{
+  width:19%;
+  height:60px;
+}
+.iconfont{
+  border:1px solid #ccc;
+   width:30px;
+  height:30px;
+  line-height: 30px;
+  margin-top:5px;
+  display:block;
+  text-align: center;
+  border-radius: 50%;
+  margin-left:13px;
+  
+}
+.feilei-info{
+  font-size: 13px;
+  color:#f1c642;
+}
+#aa{
+  padding-left:17px;
+}

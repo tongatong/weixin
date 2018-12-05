@@ -1,0 +1,88 @@
+<!--pages/zzjg/zzjg.wxml-->
+<view>
+  <text class="iconfont icon-page-pre" bindtap="Go"></text>
+  <view class="zzjghea">
+  <navigator url="" hover-class="navigator-hover"><i-icon type="return" size="22" color="#000"/></navigator>
+    <text  class="zzjghea_1">组织结构</text>
+  </view>
+  <view class="zzjgcon">
+    <view class="zzjgcon_left">
+        <view class="zzjgcon_left_1 zzjgcon_left_2">总监</view>
+        <view class="zzjgcon_left_1">区域经理</view>
+        <view class="zzjgcon_left_1">县办</view>
+        <view class="zzjgcon_left_1">招办</view>
+        <view class="zzjgcon_left_1">招生人员</view>
+
+    </view>
+    <view class="zzjgcon_right">
+    <view class="zzjgcon_right_1">
+      <view class="zzjgcon_right_2">
+        <view  class="zzjgcon_right_3">姓名: <text   class="zzjgcon_right_4">不易不易</text></view>
+        <view  class="zzjgcon_right_3">职位： <text class="zzjgcon_right_4">vuevue</text></view>
+
+        <view  class="zzjgcon_right_3">手机号： <text class="zzjgcon_right_4">147859623</text></view>
+
+      </view>
+
+      <view class="zzjgcon_right_2">
+        <view  class="zzjgcon_right_3">姓名: <text   class="zzjgcon_right_4">不易不易</text></view>
+        <view  class="zzjgcon_right_3">职位： <text class="zzjgcon_right_4">vuevue</text></view>
+
+        <view  class="zzjgcon_right_3">手机号： <text class="zzjgcon_right_4">147859623</text></view>
+
+      </view>
+
+      <view class="zzjgcon_right_2">
+        <view  class="zzjgcon_right_3">姓名: <text   class="zzjgcon_right_4">不易不易</text></view>
+        <view  class="zzjgcon_right_3">职位： <text class="zzjgcon_right_4">vuevue</text></view>
+
+        <view  class="zzjgcon_right_3">手机号： <text class="zzjgcon_right_4">147859623</text></view>
+
+      </view>
+
+      <view class="zzjgcon_right_2">
+        <view  class="zzjgcon_right_3">姓名: <text   class="zzjgcon_right_4">不易不易</text></view>
+        <view  class="zzjgcon_right_3">职位： <text class="zzjgcon_right_4">vuevue</text></view>
+
+        <view  class="zzjgcon_right_3">手机号： <text class="zzjgcon_right_4">147859623</text></view>
+
+      </view>
+
+      <view class="zzjgcon_right_2">
+        <view  class="zzjgcon_right_3">姓名: <text   class="zzjgcon_right_4">不易不易</text></view>
+        <view  class="zzjgcon_right_3">职位： <text class="zzjgcon_right_4">vuevue</text></view>
+
+        <view  class="zzjgcon_right_3">手机号： <text class="zzjgcon_right_4">147859623</text></view>
+
+      </view>
+
+      <view class="zzjgcon_right_2">
+        <view  class="zzjgcon_right_3">姓名: <text   class="zzjgcon_right_4">不易不易</text></view>
+        <view  class="zzjgcon_right_3">职位： <text class="zzjgcon_right_4">vuevue</text></view>
+
+        <view  class="zzjgcon_right_3">手机号： <text class="zzjgcon_right_4">147859623</text></view>
+
+      </view>
+
+      <view class="zzjgcon_right_2">
+        <view  class="zzjgcon_right_3">姓名: <text   class="zzjgcon_right_4">不易不易</text></view>
+        <view  class="zzjgcon_right_3">职位： <text class="zzjgcon_right_4">vuevue</text></view>
+
+        <view  class="zzjgcon_right_3">手机号： <text class="zzjgcon_right_4">147859623</text></view>
+
+      </view>
+
+      <view class="zzjgcon_right_2">
+        <view  class="zzjgcon_right_3">姓名: <text   class="zzjgcon_right_4">不易不易</text></view>
+        <view  class="zzjgcon_right_3">职位： <text class="zzjgcon_right_4">vuevue</text></view>
+
+        <view  class="zzjgcon_right_3">手机号： <text class="zzjgcon_right_4">147859623</text></view>
+
+      </view>
+       
+       
+      
+    </view>
+    </view>
+  </view>
+</view>

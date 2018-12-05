@@ -1,0 +1,32 @@
+/* com/yubaoming/yubaoming.wxss */
+
+.yb{
+  display:flex;
+  height:60px;
+  line-height:60px;
+}
+.yu{
+  font-size: 30px;
+  padding-left:70px;
+  color:#f1c642;
+}
+
+/* 信息 */
+.Jiuye-Info{
+  padding-top:20px;
+  border-bottom:5px solid pink;
+}
+.Jiuye{
+  display:flex;
+  height:35px;
+  line-height: 35px;
+  font-size:15px;
+ 
+}
+.name{
+  padding-left:50px;
+  width:85px;
+}
+.info{
+  padding-left:30px;
+}

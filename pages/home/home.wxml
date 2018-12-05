@@ -1,0 +1,180 @@
+<!--pages/home/home.wxml-->
+<view class="home">
+ 
+  <view class="home-info">
+    <text class="iconfont icon-page-pre"  bindtap="Back"></text>
+    <text class="info-text">{{name}}，欢迎您登录</text>
+  </view>
+
+
+<!-- 轮播 -->
+ <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}"  wx:key="imgUrlsId">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+
+  <!-- 分类 -->
+  <view class="home-fenlei">
+    <ul class="fenlei-ul"> 
+      <li class="fenlei-li" id="aa" bindtap="List" data-tiao="new" >
+         <view>
+            <text class="iconfont icon-xinwen"></text>
+         </view>
+         <text class="feilei-info">集团新闻</text>
+      </li>
+      <li class="fenlei-li" bindtap="List" data-tiao="shichang">
+         <view>
+           <text class="iconfont icon-notice"></text>
+         </view>
+         <text class="feilei-info">市场通知</text>
+      </li>
+       <li class="fenlei-li" bindtap="List" data-tiao="youhui">
+         <view>
+            <text class="iconfont icon-youhui"></text>
+         </view>
+         <text class="feilei-info">优惠活动</text>
+      </li>
+       <li class="fenlei-li" bindtap="List" data-tiao="zhengche">
+         <view>
+           <text class="iconfont icon-zhengce"></text>
+         </view>
+         <text class="feilei-info">政策制度</text>
+      </li>
+       <li class="fenlei-li" bindtap="JYLH">
+         <view>
+           <text class="iconfont icon-gongxibaoxi"></text>
+         </view>
+         <text class="feilei-info">就业利好</text>
+      </li>
+       <li class="fenlei-li" id="aa" bindtap="ZZJG">
+         <view>
+           <text class="iconfont icon-zuzhi"></text>
+         </view>
+         <text class="feilei-info">组织结构</text>
+      </li>
+      <li class="fenlei-li" bindtap="ZXS">
+         <view>
+           <text class="iconfont icon-youhui"></text>
+         </view>
+         <text class="feilei-info">在校查询</text>
+      </li>
+       <li class="fenlei-li" bindtap="Zhun">
+         <view>
+          <text class="iconfont icon-youhui"></text>
+         </view>
+         <text class="feilei-info">预报名学生</text>
+      </li>
+       <li class="fenlei-li" bindtap="JYCX">
+         <view>
+           <text class="iconfont icon-jiuye"></text>
+         </view>
+         <text class="feilei-info">就业查询</text>
+      </li>
+       <li class="fenlei-li">
+         <view>
+           <text class="iconfont icon-paiming"></text>
+         </view>
+         <text class="feilei-info">业绩排名</text>
+      </li>
+       <li class="fenlei-li" id="aa">
+         <view>
+           <text class="iconfont icon-huiyiguanli"></text>
+         </view>
+         <text class="feilei-info">会议管理</text>
+      </li>
+      <li class="fenlei-li">
+         <view>
+           <text class="iconfont icon-gongzichaxun"></text>
+         </view>
+         <text class="feilei-info">工资查询</text>
+      </li>
+       <li class="fenlei-li">
+         <view>
+           <text class="iconfont icon-zhusu"></text>
+         </view>
+         <text class="feilei-info">市场住宿</text>
+      </li>
+       <li class="fenlei-li">
+         <view>
+           <text class="iconfont icon-jiekuan"></text>
+         </view>
+         <text class="feilei-info">费用报销</text>
+      </li>
+       <li class="fenlei-li" bindtap="List" data-tiao="tousu">
+         <view>
+           <text class="iconfont icon-tousu"></text>
+         </view>
+         <text class="feilei-info" bindtap="goto_counter">投诉举报</text>
+      </li>
+    </ul>
+  </view>
+
+
+  <!-- 集团新闻 -->
+   <view class="weui-panel weui-panel_access">                                                                                    <view class="weui-panel__hd">集团新闻</view>
+      <view class="weui-panel__bd">
+          <view class="weui-media-box weui-media-box_text" wx:for="{{News}}"  wx:if="{{index<3}}" wx:key="index">
+              <view class="weui-media-box__desc">"{{item.bt}}"</view>
+          </view>
+      </view>
+      <view class="weui-panel__ft" bindtap="List" data-tiao="new">
+          <view class="weui-cell weui-cell_access weui-cell_link">
+              <view class="weui-cell__bd">查看更多</view>
+              <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+          </view>
+      </view>
+  </view>
+
+
+  <!-- 市场通知 -->
+   <view class="weui-panel weui-panel_access">                                                                             <view class="weui-panel__hd">市场通知</view>
+      <view class="weui-panel__bd">
+          <view class="weui-media-box weui-media-box_text" wx:for="{{ ShiChang }}"  wx:if="{{index<3}}" wx:key="index">
+              <view class="weui-media-box__desc">"{{item.bt}}"</view>
+          </view>
+      </view>
+      <view class="weui-panel__ft" bindtap="List" data-tiao="shichang">
+          <view class="weui-cell weui-cell_access weui-cell_link">
+              <view class="weui-cell__bd">查看更多</view>
+              <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+          </view>
+      </view>
+  </view>
+
+  <!-- 优惠活动 -->
+   <view class="weui-panel weui-panel_access">                                                                             <view class="weui-panel__hd">优惠活动</view>
+      <view class="weui-panel__bd">
+          <view class="weui-media-box weui-media-box_text" wx:for="{{ Youhui }}"  wx:if="{{index<3}}" wx:key="index">
+              <view class="weui-media-box__desc">"{{item.bt}}"</view>
+          </view>
+      </view>
+      <view class="weui-panel__ft" bindtap="List" data-tiao="youhui">
+          <view class="weui-cell weui-cell_access weui-cell_link">
+              <view class="weui-cell__bd">查看更多</view>
+              <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+          </view>
+      </view>
+  </view>
+
+
+  <!-- 政策制度 -->
+   <view class="weui-panel weui-panel_access">
+      <view class="weui-panel__hd">政策制度</view>
+      <view class="weui-panel__bd">
+          <view class="weui-media-box weui-media-box_text" wx:for="{{Zhengce}}"  wx:if="{{index<3}}" wx:key="index">
+              <view class="weui-media-box__desc">"{{item.bt}}"</view>
+          </view>
+      </view>
+      <view class="weui-panel__ft" bindtap="List" data-tiao="zhengche">
+          <view class="weui-cell weui-cell_access weui-cell_link">
+              <view class="weui-cell__bd">查看更多</view>
+              <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+          </view>
+      </view>
+  </view>
+      
+</view>

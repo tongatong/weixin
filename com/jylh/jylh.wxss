@@ -1,0 +1,38 @@
+/* com/jylh/jylh.wxss */
+.jy{
+  display:flex;
+  height:50px;
+  line-height: 50px;
+}
+.lh{
+   padding-left:60px;
+  border-bottom:1px solid #ccc;
+  font-size: 25px;
+  
+}
+
+.good-employment{
+  width: 100%;
+}
+.tatile {
+background: red;
+}
+.tatile, .classify-list{
+  width: 100%;
+  display: flex;
+  text-align: center;
+}
+.classify{
+ font-size: 30rpx;
+}
+.classify, .classify-detail{
+  width: 16%;
+  padding: 10px 5px;
+ text-align: center
+}
+.classify-detail{
+font-size: 13px;
+white-space:nowrap;
+overflow:hidden;
+text-overflow:ellipsis;
+}

@@ -1,0 +1,78 @@
+/* pages/zzjg/zzjg.wxss */
+.zzjghea{
+  position: fixed;
+  top:0rpx;
+  width:100%;
+  height:100rpx;
+  padding-bottom: 20rpx;
+  box-sizing: border-box;
+  padding-left: 35%;
+  background:white;
+  display: flex;
+  align-items: flex-end;
+  z-index: 1；
+
+}
+.iconfont{
+  display:flex;
+  padding-left:80px;
+}
+.zzjghea_1{
+  font-size: 42rpx;
+  margin-top: 10rpx;
+  margin-left: 30rpx;
+  box-sizing: border-box;
+  overflow: auto;
+}
+.zzjgcon{
+  position: fixed;
+  top: 100rpx;
+  width:100%;
+  height:100%;
+  display: flex;
+
+}
+.zzjgcon_left{
+  width:33%;
+  height:100%;
+}
+.zzjgcon_left_1{
+  width:100%;
+  font-size: 34rpx;
+  height:100rpx;
+  line-height: 100rpx;
+  box-sizing: border-box;
+  padding-left: 20rpx;
+  color:#2C7DC1;
+  border-bottom: 1px solid rgb(230, 225, 225);
+}
+.zzjgcon_left_2{
+  border-top: 1px solid rgb(230, 225, 225);
+}
+.zzjgcon_right{
+  width:67%;
+  height:100%;
+  border-left:1px solid rgb(230, 225, 225);
+  border-top:1px solid rgb(230, 225, 225);
+  overflow: auto;
+}
+.zzjgcon_right_2{
+  width:85%;
+  border:1px solid #F29200;
+  margin: 30rpx auto 0rpx;
+  font-size: 30rpx;
+  position: relative;
+}
+.zzjgcon_right_3{
+height:80rpx;
+box-sizing: border-box;
+line-height: 80rpx;
+padding: 0px 10rpx;
+color:#2C7DC1;
+}
+.zzjgcon_right_4{
+  position: absolute;
+  left:120rpx;
+  margin-left: 20rpx;
+  color:rgb(94, 93, 93)
+}

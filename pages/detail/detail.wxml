@@ -1,0 +1,25 @@
+<!--pages/detail/detail.wxml-->
+<import src="../../wxParse/wxParse.wxml"/>
+
+
+<view class="detail">
+  <view class="header">
+      <text class="title">{{Detail.bt}}</text>
+    </view>
+    <view class="weui-panel">
+        <view class="weui-panel__bd">
+            <view class="weui-media-box weui-media-box_text">
+              
+                <view class="weui-media-box__info">
+                    <view class="weui-media-box__info__meta">作者:{{Detail.username}}</view>
+                    <view class="weui-media-box__info__meta">时间:{{Detail.date}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="content">{{Detail.text}}</view>
+<view>
+    <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+
+</view>
+</view>

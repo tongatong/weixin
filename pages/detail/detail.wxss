@@ -1,0 +1,16 @@
+/* pages/detail/detail.wxss */
+.header{
+  display:flex;
+  padding-left:15px;
+  line-height: 40px;
+}
+.title{
+  font-size: 25px;
+  display:flex;
+  justify-content: center;
+  /* padding-left:40%; */
+  color:#f1c642;
+}
+.content{
+  font-size: 16px;
+}

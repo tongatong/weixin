@@ -1,0 +1,63 @@
+<!--com/zxs/zxs.wxml-->
+<view class="ZXS">
+  <!-- 搜索 -->
+ 
+   <view class="page">
+      <view class="page__hd">
+          <view class="page__title"> 
+              <text class="iconfont icon-page-pre" bindtap="Go"></text>
+              <text class="cx">学生信息查询</text>
+          </view>
+          <!-- <view class="page__desc">搜索栏</view> -->
+      </view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__bd">
+                <input class="weui-input" placeholder="请输入学生姓名" focus="{{inputShowed}}" bindinput="inputTyping" bindtap="showInput"/>
+          </view>
+        </view>
+      </view>
+
+
+      <view class="info">
+          <view class="info-zxs">
+            <view class="news">
+              <text>姓名：</text>
+              <text>123</text>
+            </view>
+
+            <view class="news">
+                <text>性别：</text>
+                <text>女</text>
+            </view>
+
+            <view class="news">
+                <text>年龄：</text>
+                <text>23</text>
+            </view>
+
+            <view class="news">
+                <text>住址：</text>
+                <text>山西省临汾市翼城县中卫乡</text>
+            </view>
+
+
+            <view class="news">
+                <text>班级：</text>
+                <text>1802</text>
+            </view>
+
+            <view class="news">
+                <text>缴费情况：</text>
+                <text>666</text>
+            </view>
+
+            
+          
+          </view>
+         
+      </view>
+
+    </view>
+    
+</view>

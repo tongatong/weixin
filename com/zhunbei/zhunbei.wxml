@@ -1,0 +1,71 @@
+<!--com/zhunbei/zhunbei.wxml-->
+<view class="Zhunbei">
+    <view class="yb">
+      <text class="iconfont icon-page-pre" bindtap="Go"></text>
+      <text class="yu">预报名学生信息</text>
+    </view>
+    
+   
+      <view class='forecast-name'>
+        <view class='forecast'>
+          <view class='foreacst-title'>报名表</view>
+          <view class='name'>
+            <view>姓名:</view>
+            <input bindinput="username" placeholder='请输入姓名'></input>
+          </view>
+
+           <view class='sex'>
+              <view>性别:</view>
+               <picker bindchange="Changesex" value="{{ sexindex }}" range="{{ sexarr }}">
+                  <input id='pre__sex' placeholder="{{ sexarr[sexindex] }}" />
+              </picker>
+              <!-- <input bindinput="sex"></input> -->
+           </view>
+
+           <view class='tel'>
+              <view>电话:</view>
+              <input bindinput="tel" type="idcard" placeholder='请输入电话'></input>
+            </view>
+
+          <view class='carded'>
+              <view>身份证:</view>
+              <input bindinput="card" type="idcard" placeholder='请输入身份证号'></input>
+          </view>
+
+          <view class='qualifications'>
+              <view>学历:</view>
+              <picker bindchange="Changexueli" value="{{ xueliindex }}" range="{{ xueliarr }}">
+                <input id='pre__xueli' placeholder='{{ xueliarr[xueliindex] }}' />
+              </picker>
+              <!-- <input bindinput="education"></input> -->
+          </view>
+
+
+          <view class='qualifications'>
+              <view>报道日期：</view>
+              <picker mode="date" value="{{date}}" bindchange="bindDateChange">
+                <input id='riqi' placeholder='{{ date }}' />
+              </picker>
+          </view>
+
+           <view class='qualifications'>
+              <text>招生老师:{{name }}</text>
+              <input bindinput="zsls" />
+          </view>
+         
+         
+          <view class='btn'>
+            <view class="page">
+              <view class="page__bd">
+                <view class="weui-btn-area">
+                  <button class="weui-btn" type="default" bindtap="openConfirm">提交</button>
+                  <button class="weui-btn" type="default" bindtap="openAlert">查看已报名</button>
+                </view>
+            </view> 
+          </view> 
+        </view> 
+      </view> 
+    </view>
+
+  </view>
+

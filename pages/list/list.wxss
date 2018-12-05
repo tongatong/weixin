@@ -1,0 +1,42 @@
+/* pages/list/list.wxss */
+.header{
+  display:flex;
+  padding-left:15px;
+  line-height: 40px;
+}
+.title{
+  font-size: 25px;
+  padding-left:35%;
+  color:#f1c642;
+}
+.list-ul{
+  width:100%;
+  height:100%;
+}
+
+.icon-xinwen{
+  padding-left:15px;
+}
+.icon-xiayiye2{
+   position:absolute;
+   right:0;
+   top:0;
+}
+.list-view{
+  position:relative;
+  display:flex;
+  height:40px;
+  line-height: 40px;
+ border-bottom:1px solid #ccc;
+}
+.list-li{
+  padding-left:13px;
+}
+.list-info{
+  display:block;
+  width:550rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  font-size:15px;
+}

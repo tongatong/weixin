@@ -1,0 +1,43 @@
+<!--com/yubaoming/yubaoming.wxml-->
+<view class="Yubaoming">
+    <view class="yb">
+      <text class="yu">预报名学生信息</text>
+    </view>
+
+    <!-- 信息 -->
+    <view class="Jiuye-Info" wx:for="{{ Info }}" wx:key="index">
+      <view class="Jiuye">
+        <text class="name">姓 名：</text>
+        <text class="info">{{item.username}}</text>
+      </view>
+      <view class="Jiuye">
+        <text class="name">性别：</text>
+        <text class="info">{{item.sex}}</text>
+      </view>
+    
+      <view class="Jiuye">
+        <text class="name">学历：</text>
+        <text class="info">{{item.education}}</text>
+      </view>
+      <view class="Jiuye">
+        <text class="name">联系电话：</text>
+        <text class="info">{{item.tel}}</text>
+      </view>
+
+      <view class="Jiuye">
+        <text class="name">身份证号：</text>
+        <text class="info">{{item.card}}</text>
+      </view>
+      <view class="Jiuye">
+        <text class="name">招生老师：</text>
+        <text class="info">{{item.zsls}}</text>
+      </view>
+      <view class="Jiuye">
+        <text class="name">报名日期：</text>
+        <text class="info">{{item.date}}</text>
+      </view>
+  </view>
+
+</view>
+
+

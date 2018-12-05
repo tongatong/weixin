@@ -1,0 +1,26 @@
+<!--com/jylh/jylh.wxml-->
+<view class="JYLH">
+    <view class="jy">
+       <text class="iconfont icon-page-pre" bindtap="Go"></text>
+      <text class="lh">积云教育部分就业利好</text>
+    </view>
+    
+
+    <!-- 信息 -->
+    <view class='good-employment'>
+      <view class='tatile'>
+        <view class='classify'>专业</view>
+        <view class='classify'>班级</view>
+        <view class='classify'>姓名</view>
+        <view class='classify'>户籍</view>
+        <view class='classify'>薪资</view>
+      </view>
+      <view class='classify-list' wx:for="{{Jiuye}}" wx:key="index">
+        <view class='classify-detail'>{{item.bname}}</view>
+        <view class='classify-detail'>{{item.cname}}</view>
+        <view class='classify-detail'>{{item.sname}}</view>
+        <view class='classify-detail'>{{item.saddress}}</view>
+        <view class='classify-detail'>{{item.jsalary}}</view>
+      </view>
+  </view>
+</view>
